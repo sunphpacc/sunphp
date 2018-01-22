@@ -37,7 +37,7 @@ class TemplateControl
         try
          {
              if (is_file($template_file)) {
-                 require_once($template_file);
+                 require($template_file);
                  return true;
              } else {
                  throw new ControlException($template_file . " doesn't exist");

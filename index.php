@@ -2,7 +2,7 @@
 /**
  * This is the call of the user demo sunphp entry
  */
-//error_reporting(E_ALL);
+//error_reporting(0);
 use Sunphp\Sun;
 require_once __DIR__ . '/Sunphp/Sun.php';
 //Open to set the default template
@@ -15,7 +15,6 @@ $sun = new Sun();
  */
 $sun->setRunMode(1);
 $sun->run();
-
 
 
 
